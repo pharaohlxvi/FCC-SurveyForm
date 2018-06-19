@@ -35,8 +35,10 @@
         </div>
         <hr class="fancy">
         <div>
-          <label class="leftSide" for="dropdown">What do you think of this survey?</label>
-          <select class="rightSide dropdown" name="dropdown" id="dropdown">
+          <div class="label">
+            <label for="dropdown">What do you think of this survey?</label>
+          </div>
+          <select class="dropdown" name="dropdown" id="dropdown">
             <option disabled value>Select your answer</option>
             <option value="extremely">Extremely Important</option>
             <option value="very">Very Important</option>
@@ -45,7 +47,9 @@
         </div>
         <hr class="fancy">
         <div>
-          <label class="container" for="radio-buttons">How would you rate this survey?</label>
+          <div class="label">
+            <label for="radio-buttons">How would you rate this survey?</label>
+          </div>
           <div id="radio-container">
             <input type="radio" name="radio-buttons" value="1"><label>&#x2606;</label>
             <input type="radio" name="radio-buttons" value="2"><label>&#x2606;&#x2606;</label>
@@ -56,23 +60,25 @@
         </div>
         <hr class="fancy">
         <div>
-          <label for="favorite">Which are your favorite parts of this survey?<br>(Check all that apply)</label>
-          <div class="container">
-            <div>
-                <input type="checkbox" name="favorite" value="1"><label>Name</label></li>
-                <input type="checkbox" name="favorite" value="1"><label>Email</label></li>
-                <input type="checkbox" name="favorite" value="1"><label>Age</label></li>
-            </div>
-            <div>
-                <input type="checkbox" name="favorite" value="1"><label>Opinion Dropdown</label></li>
-                <input type="checkbox" name="favorite" value="1"><label>Rating</label></li>
-                <input type="checkbox" name="favorite" value="1"><label>Favorite Parts</label></li>
-            </div>
+          <div class="label">
+            <label for="favorite">Which are your favorite parts of this survey?<br><span>(Check all that apply)</span></label>
+          </div>
+          <div>
+            <input type="checkbox" name="favorite" value="1"><label>Name</label></li>
+            <input type="checkbox" name="favorite" value="1"><label>Email</label></li>
+            <input type="checkbox" name="favorite" value="1"><label>Age</label></li>
+          </div>
+          <div>
+            <input type="checkbox" name="favorite" value="1"><label>Opinion Dropdown</label></li>
+            <input type="checkbox" name="favorite" value="1"><label>Rating</label></li>
+            <input type="checkbox" name="favorite" value="1"><label>Favorite Parts</label></li>  
           </div>
         </div>
         <hr class="fancy">
         <div>
-          <label for="comments">Please feel free to add more amazing things about this survey!</label>
+          <div class="label">
+            <label for="comments">Please feel free to add more amazing things about this survey!</label>
+          </div>
           <textarea name="comments" id="comments" cols="20" rows="5" placeholder="(Only positive comments, obviously!)"></textarea>
         </div>
         <br>
