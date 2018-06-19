@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IMPORTANT SURVEY</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/avara" type="text/css"/>
+  </head>
+  
+  <body>
+    <h1 id="title">VERY IMPORTANT SURVEY</h1>
+    <div id="form-outer">
+      <p id="description">
+        This is a very important survey
+      </p>
+      <hr class="fancy">
+      <form id="survey-form" method="GET" action="#">
+        <div>
+          <label class="leftSide" id="name-label" for="name">* Name:</label>
+          <input class="rightSide" autofocus type="text" id="name" name="name" placeholder="Enter your name" id="required-input" required>
+        </div>
+        <div>
+          <label class="leftSide" id="email-label"f or="email">* Email:</label>
+          <input class="rightSide" type="email" id="email" name="email" placeholder="Enter your email" id="required-input" required>
+        </div>
+        <div>
+          <label class="leftSide" id="number-label" for="age">Age:</label>
+          <input class="rightSide" type="number" id="number" name="age" min="0" max="99" placeholder="Enter your age">
+        </div>
+        <hr class="fancy">
+        <div>
+          <label class="leftSide" for="dropdown">What do you think of this survey?</label>
+          <select class="rightSide dropdown" name="dropdown" id="dropdown">
+            <option disabled value>Select your answer</option>
+            <option value="extremely">Extremely Important</option>
+            <option value="very">Very Important</option>
+            <option value="amazing">Amazing</option>
+          </select>
+        </div>
+        <hr class="fancy">
+        <div>
+          <label class="container" for="radio-buttons">How would you rate this survey?</label>
+          <div id="radio-container">
+            <input type="radio" name="radio-buttons" value="1"><label>&#x2606;</label>
+            <input type="radio" name="radio-buttons" value="2"><label>&#x2606;&#x2606;</label>
+            <input type="radio" name="radio-buttons" value="3"><label>&#x2606;&#x2606;&#x2606;</label>
+            <input type="radio" name="radio-buttons" value="4"><label>&#x2606;&#x2606;&#x2606;&#x2606;</label>
+            <input type="radio" name="radio-buttons" value="5"><label>&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</label>
+          </div>
+        </div>
+        <hr class="fancy">
+        <div>
+          <label for="favorite">Which are your favorite parts of this survey?<br>(Check all that apply)</label>
+          <div class="container">
+            <div>
+                <input type="checkbox" name="favorite" value="1"><label>Name</label></li>
+                <input type="checkbox" name="favorite" value="1"><label>Email</label></li>
+                <input type="checkbox" name="favorite" value="1"><label>Age</label></li>
+            </div>
+            <div>
+                <input type="checkbox" name="favorite" value="1"><label>Opinion Dropdown</label></li>
+                <input type="checkbox" name="favorite" value="1"><label>Rating</label></li>
+                <input type="checkbox" name="favorite" value="1"><label>Favorite Parts</label></li>
+            </div>
+          </div>
+        </div>
+        <hr class="fancy">
+        <div>
+          <label for="comments">Please feel free to add more amazing things about this survey!</label>
+          <textarea name="comments" id="comments" cols="20" rows="5" placeholder="(Only positive comments, obviously!)"></textarea>
+        </div>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
